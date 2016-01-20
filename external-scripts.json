@@ -9,5 +9,6 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-google-images",
+  "hubot-voting",
   "hubot-plusplus"
 ]
