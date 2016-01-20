@@ -8,6 +8,7 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-google-images",
+  "hubot-vine",
   "hubot-voting",
   "hubot-plusplus",
   "hubot-hangman"
