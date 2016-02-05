@@ -26,9 +26,10 @@ module.exports = (robot) ->
       parser = new htmlparser.Parser(handler)
       parser.parseComplete(body)
 
-      screencap = img[0].attribs
+      console.log(body)
+      screencap = JSON.parse(body)
 
-      msg.send "https://frinkiac.com/img/#{screencap.episode}/#{scranncap.Id}/medium.jpg"
+      msg.send "https://frinkiac.com/img/#{screencap.episode}/#{screencap.Id}/medium.jpg"
 
   robot.respond /simpsons me\s?((?:0[1-9]|1[0-2]).?(?:0[1-9]|[1-2][0-9]|3[0-1]).?(?:20\d{2})$|.*)?/i, (msg) ->
     arg = msg.match[1]
