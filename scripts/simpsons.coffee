@@ -22,12 +22,9 @@ module.exports = (robot) ->
 
   fetchSimpsons = (msg, url) ->
     msg.http(url).get() (err, res, body) ->
-      handler = new htmlparser.DefaultHandler()
-      parser = new htmlparser.Parser(handler)
-      parser.parseComplete(body)
 
       console.log(body)
-      screencap = JSON.parse(body)
+      screencap = JSON.parse(body)[0]
 
       msg.send "https://frinkiac.com/img/#{screencap.episode}/#{screencap.Id}/medium.jpg"
 
