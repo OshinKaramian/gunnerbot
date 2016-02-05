@@ -32,4 +32,4 @@ module.exports = (robot) ->
 
   robot.respond /simpsons me\s?((?:0[1-9]|1[0-2]).?(?:0[1-9]|[1-2][0-9]|3[0-1]).?(?:20\d{2})$|.*)?/i, (msg) ->
     arg = msg.match[1]
-    fetchAchewood(msg, apiSearch(arg))
+    fetchSimpsons(msg, apiSearch(arg))
