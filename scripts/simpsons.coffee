@@ -1,9 +1,6 @@
 # Description
 #   Oooh... that's a paddlin'
 #
-# Dependencies:
-#  "htmlparser": "1.7.6"
-#
 # Configuration:
 #   None
 #
